@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "electron dist/index.js",
+    "start": "electron --trace-warnings dist/index.js",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "build": "tsc",
     "lint": "eslint \"./src/**/*.{ts,tsx}\"",
@@ -29,6 +29,10 @@
   },
   "dependencies": {
     "dotenv": "^16.3.1",
-    "electron": "^26.2.4"
+    "electron": "^26.2.4",
+    "node-record-lpcm16": "^1.0.1",
+    "node-wav-player": "^0.2.0",
+    "openai": "^4.11.1",
+    "ws": "^8.14.2"
   }
 }
